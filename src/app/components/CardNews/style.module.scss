@@ -1,0 +1,20 @@
+.glass {
+    position: absolute;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    top: auto;
+}
+
+
+
+
+// recorde imagem destaque
+
+// .destaque_img {
+//   height: 500px;
+//   /* height of container */
+//   object-fit: cover;
+// }
