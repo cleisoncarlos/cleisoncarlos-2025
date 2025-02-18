@@ -2,14 +2,17 @@
 import CardNews from "./components/CardNews";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import MarqueeIcons from "./components/MarqueeIcons";
 import MyServices from "./components/MyServices";
 
 export default function Home() {
   return (
     <div className='container'>
 
+  
       <Header/>
       <Hero/>
+      <MarqueeIcons/>
       <MyServices/>
 
 
