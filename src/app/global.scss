@@ -14,12 +14,11 @@
     background-color: #262626;
   }
 
- 
-
-  .text-red {
+   .text-red {
     color: #F60838;
   }
 
   #bg-code {
-    background: url('/bg.webp');
+    background: url("/bg1.jpg");
+    background-size: cover;
   }

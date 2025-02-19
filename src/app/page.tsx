@@ -9,6 +9,7 @@ import MyServices from "./components/MyServices";
 import { useState, useEffect } from "react";
 
 interface Post {
+  // _embedded: any;
   id: number;
   title: { rendered: string };
   featured_media: { source_url: string };
@@ -24,7 +25,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://aprovinciadopara.com.br/wp-json/wp/v2/posts?_embed") // Ajuste a URL da API
+    fetch("https://aprovinciadopara.com.br/wp-json/wp/v2/posts?_embed&per_page=6") // Ajuste a URL da API
       .then((response) => response.json())
       .then((data) => {
         setPosts(data);
@@ -32,10 +33,9 @@ export default function Home() {
       })
       .catch((error) => console.error("Erro ao buscar posts:", error));
   }, []);
-
+  
   if (loading) return <p>Carregando...</p>;
-
-
+  
 
 
   return (
@@ -59,7 +59,7 @@ export default function Home() {
 
 
 
-{posts.map((post) => (
+{/* {posts.map((post) => (
         <div className="col-md-4" key={post.id}>
           <CardNews
             url={`https://seusite.com/post/${post.id}`}
@@ -68,12 +68,23 @@ export default function Home() {
             urlImage={post.featured_media?.source_url || "https://picsum.photos/800/600"}
           />
         </div>
-      ))}
+      ))} */}
 
 
-{/* <div className="col-lg-4">
-  <CardNews url="#" category="teste" title="Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor" urlImage="https://picsum.photos/800/600?random=1"/>
-</div> */}
+{posts.map((post) => {
+            const imageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://picsum.photos/800/600";
+            
+            return (
+              <div className="col-md-4" key={post.id}>
+                <CardNews
+                  url={`https://seusite.com/post/${post.id}`}
+                  category="Notícia" // Se quiser buscar a categoria, precisará fazer outra requisição
+                  title={post.title.rendered}
+                  urlImage={imageUrl}
+                />
+              </div>
+            );
+          })}
 
 
 

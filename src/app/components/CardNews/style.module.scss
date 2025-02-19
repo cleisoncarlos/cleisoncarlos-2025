@@ -10,6 +10,13 @@
 
 
 
+    .crop-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3 !important;
+        object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+      }
+
 
 // recorde imagem destaque
 
