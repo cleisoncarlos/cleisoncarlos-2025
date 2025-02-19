@@ -1,7 +1,7 @@
 import Marquee from "react-fast-marquee";
-
 import IconLogo from "./IconLogo";
-import   axixos from '../../../../public/icons/supabase/supabase-original-wordmark.svg'
+
+import styles from './style.module.scss'
 
 const iconPaths = {
   html: '/icons/html5/html5-original.svg',
@@ -47,8 +47,8 @@ const iconPaths = {
 
 export default function MarqueeIcons() {
   return (
-<div className="bg-white py-2">
-<Marquee gradient={true}>
+<div className={`py-2 ${styles.glass}`}>
+<Marquee>
         {Object.entries(iconPaths).map(([name, src]) => (
           <IconLogo key={name} src={src} alt={name}  />
         ))}
