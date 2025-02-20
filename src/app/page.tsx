@@ -1,12 +1,14 @@
 
 "use client"
 import CardNews from "./components/CardNews";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MarqueeIcons from "./components/MarqueeIcons";
 import MyServices from "./components/MyServices";
 
 import { useState, useEffect } from "react";
+import Projects from "./components/Projects";
 
 interface Post {
   // _embedded: any;
@@ -45,9 +47,10 @@ export default function Home() {
   
 <Header/>
 <Hero/>
+<MarqueeIcons/>
 </div>
 <MyServices/>
-<MarqueeIcons/>
+  <Projects/>
 
 
 <div className="container py-5">
@@ -90,6 +93,9 @@ export default function Home() {
 
 </div>
 </div>
+
+
+<Footer/>
 </>
 
   );

@@ -1,14 +1,15 @@
 import React from 'react'
-import Social from '../Social'
+import Social from './Social'
+import style from './style.module.scss'
 
 export default function Hero() {
   return (
-  <section>
-    <div className="mt-5">
-        <div className="row py-5">
-            <div className="col-lg-4 text-white">
+  <section className={`container-fluid ${style['bg-hero']}`}>
+    <div className="container py-5">
+        <div className="row">
+            <div className="col-lg-6 text-white">
 
-      <div className="ms-5">
+  
       <h5>Hello, I'm</h5>
                 <h1 className='fw-bold display-3'>Lorem Ipsum <span className='text-red'>Dolor</span></h1>
                 <h3>Lorem Ipsum Dolor</h3>
@@ -16,12 +17,12 @@ export default function Hero() {
           <Social/>
           
           
-      </div>
+ 
             </div>
 
-            <div className="col-lg-8 d-flex justify-content-end">
-                <img src="/hand.png" className='img-fluid' alt="" />
-            </div>
+            {/* <div className="col-lg-8 d-flex justify-content-end">
+                 <img src="/hand.png" className='img-fluid' alt="" /> 
+            </div> */}
         </div>
     </div>
   </section>

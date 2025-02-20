@@ -7,7 +7,7 @@ export default function CardNews({urlImage, title, category, url}:{urlImage: str
         <a href={url}>
             <img src={urlImage} className={`img-fluid crop-img ${styles['crop-img']}`} alt={title} />       
             <div  className={`card-img-overlay rounded-0 border-0 ${styles.glass}`}>
-                    <span className="badge text-bg-light">{category}</span>
+                    <span className="badge text-bg-danger">{category}</span>
                     <p className="text-white tw-bold">{title}</p>
             </div>
         </a>
