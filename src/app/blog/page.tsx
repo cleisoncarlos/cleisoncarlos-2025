@@ -4,8 +4,9 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import CardNews from "../components/CardNews";
 import { useState, useEffect } from "react";
+import Loading from "../components/Loading";
 
-import { ArrowLeft, ArrowArcRight, ArrowRight } from '@phosphor-icons/react'
+import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
 
 interface Post {
   _embedded: any;
@@ -54,7 +55,7 @@ export default function Blog() {
       .catch((error) => console.error("Erro ao buscar categorias:", error));
   }, []);
 
-  if (loading) return <p>Carregando...</p>;
+  if (loading) return <Loading/>;
 
   const handleNextPage = (event: any) => {
     event.preventDefault();

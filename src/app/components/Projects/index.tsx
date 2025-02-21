@@ -17,14 +17,12 @@ const logosPaths = {
   sbseg: '/logos/sbseg.png',
   secult: '/logos/secult.png',
 
-
-
 }
 
 export default function Projects() {
   return (
 <div className="container py-5" >
-<Marquee pauseOnHover={true} gradient gradientColor="#212529" gradientWidth={600} speed={40} >
+<Marquee pauseOnHover={true} gradient gradientColor="#212529" gradientWidth={300} speed={40} >
         {Object.entries(logosPaths).map(([name, src]) => (
           <a href="/">
             <img key={name} src={src} alt={name}  height={150} width={300} className="img-fluid px-3" />

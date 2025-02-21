@@ -20,6 +20,7 @@ export default function CardService({
           {Icon && <Icon size={60} color="#F60838" weight='duotone' className='mb-2' />}
           
           <h5 className="card-title fw-bold">{title}</h5>
+          <hr/>
           <p className="card-text small">{description}</p>
         </div>
       </div>

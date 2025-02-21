@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./global.scss";
 
+
 const poppins = Poppins({
   weight: ['400', '600'],
   subsets: ['latin'],
-  display: 'swap',
+  display: 'swap'
  });
+
 
 
  export const metadata: Metadata = {  
@@ -50,6 +52,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${poppins.className}`}>
         {children}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>
   );

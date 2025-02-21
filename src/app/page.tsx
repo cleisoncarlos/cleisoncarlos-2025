@@ -7,11 +7,13 @@ import Hero from "./components/Hero";
 import MarqueeIcons from "./components/MarqueeIcons";
 import MyServices from "./components/MyServices";
 
+import Loading from "./components/Loading";
+
 import { useState, useEffect } from "react";
 import Projects from "./components/Projects";
 
 interface Post {
-  // _embedded: any;
+   _embedded: any;
   id: number;
   title: { rendered: string };
   featured_media: { source_url: string };
@@ -36,7 +38,7 @@ export default function Home() {
       .catch((error) => console.error("Erro ao buscar posts:", error));
   }, []);
   
-  if (loading) return <p>Carregando...</p>;
+  if (loading) return <Loading/>;
   
 
 
@@ -55,9 +57,9 @@ export default function Home() {
 
 <div className="container py-5">
 
-<h5>Hello, I'm</h5>
-                <h1 className='fw-bold display-3'>Lorem Ipsum <span className='text-red'>Dolor</span></h1>
-                <h3>Lorem Ipsum Dolor</h3>
+
+                <h1 className='fw-bold display-3'><span className="small">Meu</span> <span className='text-red'>Blog</span></h1>
+                <h5>As últimas novidades e conquistas no meu universo de programação</h5>
 <div className="row">
 
 

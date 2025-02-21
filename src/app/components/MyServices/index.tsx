@@ -1,33 +1,40 @@
 import React from 'react'
 import CardService from './CardService'
-import { Code, TerminalWindow , Robot, Palette, Storefront } from '@phosphor-icons/react'
+import { Code, Robot, Handshake, Storefront, AppleLogo, Graph  } from '@phosphor-icons/react'
 
 const services = [
   {
     icon: Code,
-    title: 'Websites, Portais e Blogs:',
+    title: 'Portais, websites e blogs',
     description: 'A presença online é essencial nos dias de hoje. Com habilidades em design atraente e programação avançada, vou criar um site ou blog personalizado que se destaque da concorrência. Transmita sua mensagem de forma cativante, compartilhe seus conhecimentos ou promova seus serviços de maneira profissional e intuitiva.'
   },
   {
-    icon: TerminalWindow,
-    title: 'teste',
+    icon: Robot,
+    title: 'Inteligência Artificial I.A.',
     description: 'Potencialize seu negócio com soluções de Inteligência Artificial personalizadas. Integro tecnologias avançadas de AI em seus sistemas existentes para automatizar processos, melhorar a tomada de decisões e criar experiências mais inteligentes para seus usuários. Desde chatbots inteligentes até análise preditiva de dados, posso ajudar sua empresa a aproveitar todo o potencial da AI para se manter à frente da concorrência.'
   },
   {
-    icon: Robot,
-    title: 'teste',
+    icon: AppleLogo,
+    title: 'Aplicativos ',
     description: 'Entre na era dos aplicativos móveis e leve seu negócio para o próximo nível. Com expertise em desenvolvimento de aplicativos para iOS e Android, vou criar uma experiência personalizada que se adapta perfeitamente aos dispositivos móveis. Seja um aplicativo corporativo, uma solução de gerenciamento ou uma ideia revolucionária, estou aqui para transformá-la em um aplicativo funcional e atraente.'
   },
   {
-    icon: Palette,
-    title: 'teste',
+    icon: Storefront,
+    title: 'E-commerce',
     description: 'Abra as portas do seu negócio para o mundo digital com uma Loja Virtual sob medida. Vou criar uma plataforma de compras online envolvente, segura e de fácil navegação, que vai encantar seus clientes e impulsionar suas vendas. De pagamentos seguros a catálogos de produtos atraentes, sua loja virtual será o ponto de partida para o sucesso do seu empreendimento.'
   },
   {
-    icon: Storefront,
-    title: 'teste',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum'
-  }
+    icon: Handshake,
+    title: 'Landing Pages & Marketing',
+    description: 'Criação de landing pages otimizadas para campanhas de marketing. Desenvolvimento de páginas focadas na conversão de visitantes em leads ou clientes, integrando SEO, design responsivo e chamadas para ação eficazes, garantindo uma experiência de usuário envolvente e resultados mensuráveis.'
+  },
+  {
+    icon: Graph,
+    title: 'Mentoria especializada',
+    description: 'Ofereça mentoria especializada para serviços na web, guiando desde o desenvolvimento front-end até a otimização de SEO. Compartilhe práticas recomendadas, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações e sites. Transforme habilidades básicas em expertise'
+    }
+
+
 ]
 
 export default function MyServices() {
