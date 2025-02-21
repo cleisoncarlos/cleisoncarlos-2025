@@ -11,11 +11,14 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #262626;
+    background-color: #212529;
   }
 
- 
-
-  .text-red {
+   .text-red {
     color: #F60838;
+  }
+
+  #bg-code {
+    background: url("/bg1.jpg");
+    background-size: cover;
   }

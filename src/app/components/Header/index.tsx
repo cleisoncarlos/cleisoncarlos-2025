@@ -3,9 +3,15 @@ import React from 'react'
 export default function Header() {
   return (
 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark" >
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar w/ text</a>
+    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div className="container">
+    <a className="navbar-brand text-red" href="/">
+    {/* <span>
+   
+    <span className='fw-bold text-red'>cleisoncarlos</span><span className='small text-white'>.com</span> </span>
+     */}
+     <img src='/logo-cleisoncarlos.png' className='img-fluid'/>  
+    </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -15,14 +21,14 @@ export default function Header() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <a className="nav-link" href="#">Sobre</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <a className="nav-link" href="#">Blog</a>
         </li>
       </ul>
       <span className="navbar-text">
-        Navbar text with an inline element
+        <a href='/' className='btn btn-danger btn-sm'>ENTRE EM CONTATO</a> 
       </span>
     </div>
   </div>
