@@ -55,7 +55,7 @@ export default function Blog() {
       .catch((error) => console.error("Erro ao buscar categorias:", error));
   }, []);
 
-  if (loading) return <Loading/>;
+  if (loading) return <Loading />;
 
   const handleNextPage = (event: any) => {
     event.preventDefault();

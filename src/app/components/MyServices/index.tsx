@@ -1,6 +1,6 @@
 import React from 'react'
 import CardService from './CardService'
-import { Code, Robot, Handshake, Storefront, AppleLogo, Graph  } from '@phosphor-icons/react'
+import { Code, Robot, Handshake, Storefront, AppleLogo, Graph } from '@phosphor-icons/react'
 
 const services = [
   {
@@ -32,7 +32,7 @@ const services = [
     icon: Graph,
     title: 'Mentoria especializada',
     description: 'Ofereça mentoria especializada para serviços na web, guiando desde o desenvolvimento front-end até a otimização de SEO. Compartilhe práticas recomendadas, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações e sites. Transforme habilidades básicas em expertise'
-    }
+  }
 
 
 ]
@@ -41,24 +41,24 @@ export default function MyServices() {
   return (
     <section id='bg-code'>
       <div className="container py-5">
-        <h1 className='fw-bold display-3 text-white'>Lorem Ipsum <span className='text-red'>Dolor</span></h1>
-        <h3 className='text-secondary'>Lorem Ipsum Dolor</h3>
-        <p className='text-white small'>
-          Combinamos ferramentas e plataformas líderes da indústria para desenvolver sites, 
-          aplicativos e sistemas que não só atendem, mas superam as expectativas. 
+        <h1 className='fw-bold display-3'><span className='text-white h2 fw-bold'>Alguns dos meus </span><span className='text-red'> serviços</span></h1>
+        <h3 className='text-secondary'>O que posso fazer por você?</h3>
+        <p className='text-white'>
+          Combinamos ferramentas e plataformas líderes da indústria para desenvolver sites,
+          aplicativos e sistemas que não só atendem, mas superam as expectativas.
           <br />
-          Nossa equipe é especializada em um amplo espectro de tecnologias, 
-          garantindo que possamos oferecer soluções personalizadas e de alta qualidade, 
-          adaptadas às necessidades específicas de cada cliente. Com uma abordagem centrada no cliente e uma paixão por excelência, 
+          Nossa equipe é especializada em um amplo espectro de tecnologias,
+          garantindo que possamos oferecer soluções personalizadas e de alta qualidade,
+          adaptadas às necessidades específicas de cada cliente. Com uma abordagem centrada no cliente e uma paixão por excelência,
           estamos aqui para transformar suas ideias em realidade com tecnologia de ponta.
         </p>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
           {services.map((service, index) => (
-            <CardService 
+            <CardService
               key={index}
-              icon={service.icon} 
-              title={service.title} 
-              description={service.description} 
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
             />
           ))}
         </div>

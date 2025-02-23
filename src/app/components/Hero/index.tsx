@@ -4,27 +4,29 @@ import style from './style.module.scss'
 
 export default function Hero() {
   return (
-  <section className={`container-fluid ${style['bg-hero']}`}>
-    <div className="container py-5">
+    <section className={`container-fluid ${style['bg-hero']}`}>
+      <div className="container py-5">
         <div className="row">
-            <div className="col-lg-6 text-white">
+          <div className="col-lg-6 text-white">
 
-  
-      <h5>Hello, I'm</h5>
-                <h1 className='fw-bold display-3'>Lorem Ipsum <span className='text-red'>Dolor</span></h1>
-                <h3>Lorem Ipsum Dolor</h3>
-                <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod, excepturi exercitationem omnis, magni laborum tenetur sequi molestiae similique beatae, possimus laudantium deserunt eaque animi! Explicabo nihil amet rerum ex.</p>
-          <Social/>
-          
-          
- 
-            </div>
 
-            {/* <div className="col-lg-8 d-flex justify-content-end">
-                 <img src="/hand.png" className='img-fluid' alt="" /> 
+            <h5>Olá, eu sou <span className='text-red fw-bold'>Clei</span></h5>
+            <h1 className=' display-5'><span className='text-red fw-bold'>Experiências Digitais</span> que Transformam!</h1>
+
+
+            <p>Sou um desenvolvedor <span className='fw-bold'>web/mobile</span> apaixonado por criar experiências digitais incríveis. Minha paixão pela tecnologia e pelo design me impulsiona a criar soluções criativas e funcionais que ultrapassam as expectativas dos meus clientes</p>
+            <p>Se você está em busca de um site impactante, um aplicativo web ou soluções digitais personalizadas, estou aqui para ajudar. Vamos juntos transformar suas ideias em realidade digital! Entre em contato e vamos começar a criar algo incrível juntos.</p>
+            <Social />
+
+
+
+          </div>
+
+          {/* <div className="col-lg-8 d-flex justify-content-end">
+                 <img src="/hand.png" className='img-fluid' alt="" />
             </div> */}
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
   )
 }
