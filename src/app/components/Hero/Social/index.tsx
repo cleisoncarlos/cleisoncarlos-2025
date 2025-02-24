@@ -5,24 +5,24 @@ export default function Hero() {
 <>
   <ul className="nav">
   <li className='nav-item'>
-    <a className="nav-link active" aria-current="page" href="#">
-    <LinkedinLogo color="#bababa" weight="duotone" size={40}/>
+    <a className="nav-link px-2 " aria-current="page" href="https://br.linkedin.com/in/cleisoncarlos" target="_blank" rel="noreferrer">
+    <LinkedinLogo color="#fff" weight="duotone" size={32}/>
     </a>
   </li>
   <li className='nav-item'>
-    <a className="nav-link" href="#">
-    <GithubLogo color="#bababa" weight="duotone" size={40} />
+    <a className="nav-link px-2" href="https://github.com/cleisoncarlos" target="_blank" rel="noreferrer">
+    <GithubLogo color="#fff" weight="duotone" size={32} />
     </a>
   </li>
   <li className='nav-item'>
-    <a className="nav-link" href="#">
-    <MediumLogo color="#bababa" weight="duotone" size={40} />
+    <a className="nav-link px-2" href="https://cleisoncarlos.medium.com" target="_blank" rel="noreferrer">
+    <MediumLogo color="#fff" weight="duotone" size={32} />
     </a>
   </li>
 
   <li className='nav-item'>
-    <a className="nav-link" href="#">
-    <DribbbleLogo color="#bababa" weight="duotone" size={40} />
+    <a className="nav-link px-2" href="https://dribbble.com/cleisoncarlos" target="_blank" rel="noreferrer">
+    <DribbbleLogo color="#fff" weight="duotone" size={32} />
     </a>
   </li>
 

@@ -31,7 +31,7 @@ export default function Projects() {
         <h1 className='fw-bold display-3'><span className='text-white h2 fw-bold'>Conheça alguns </span><span className='text-red'> projetos</span></h1>
         <h4 className='text-secondary'>Desde grandes portais a pequenos sites, conheça um pouco mais ...</h4>
       </div>
-      <Marquee pauseOnHover={true} gradient gradientColor="#212529" gradientWidth={300} speed={40} >
+      <Marquee pauseOnHover={true} gradient gradientColor="#212529" speed={40} >
         {Object.entries(logosPaths).map(([name, src]) => (
           <a href="/" key={name}>
             <img key={name} src={src} alt={name} height={150} width={300} className="img-fluid px-3" />

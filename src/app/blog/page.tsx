@@ -1,10 +1,9 @@
 'use client'
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 import CardNews from "../components/CardNews";
-import { useState, useEffect } from "react";
 import Loading from "../components/Loading";
+import { useState, useEffect } from "react";
 
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
 
@@ -79,10 +78,13 @@ export default function Blog() {
     <>
       <div>
         <Header />
-        <Hero />
-      </div>
+        </div>
       <div className="container py-5">
-        <div className="row">
+
+      <h1 className='fw-bold display-3'><span className="small text-white h3">Meu</span> <span className='text-red'>Blog</span></h1>
+      <h5>Últimas postagens</h5>
+
+        <div className="row mt-5">
           {posts.map((post) => {
             const imageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://picsum.photos/800/600";
             const category = categories[post.categories[0]] || "Notícia";

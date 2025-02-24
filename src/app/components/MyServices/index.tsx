@@ -6,32 +6,32 @@ const services = [
   {
     icon: Code,
     title: 'Portais, websites e blogs',
-    description: 'A presença online é essencial nos dias de hoje. Com habilidades em design atraente e programação avançada, vou criar um site ou blog personalizado que se destaque da concorrência. Transmita sua mensagem de forma cativante, compartilhe seus conhecimentos ou promova seus serviços de maneira profissional e intuitiva.'
+    description: 'A presença online é essencial nos dias de hojem um site ou blog personalizado que se destaque da concorrência. Transmita sua mensagem de forma cativante, compartilhe seus conhecimentos ou promova seus serviços de maneira profissional na internet.'
   },
   {
     icon: Robot,
     title: 'Inteligência Artificial I.A.',
-    description: 'Potencialize seu negócio com soluções de Inteligência Artificial personalizadas. Integro tecnologias avançadas de AI em seus sistemas existentes para automatizar processos, melhorar a tomada de decisões e criar experiências mais inteligentes para seus usuários. Desde chatbots inteligentes até análise preditiva de dados, posso ajudar sua empresa a aproveitar todo o potencial da AI para se manter à frente da concorrência.'
+    description: 'Potencialize seu negócio com soluções de Inteligência Artificial personalizadas, automatize processos, melhore a tomada de decisões e crie experiências mais inteligentes para seus usuários, aproveite todo o potencial da AI para se manter à frente da concorrência.'
   },
   {
     icon: AppleLogo,
     title: 'Aplicativos ',
-    description: 'Entre na era dos aplicativos móveis e leve seu negócio para o próximo nível. Com expertise em desenvolvimento de aplicativos para iOS e Android, vou criar uma experiência personalizada que se adapta perfeitamente aos dispositivos móveis. Seja um aplicativo corporativo, uma solução de gerenciamento ou uma ideia revolucionária, estou aqui para transformá-la em um aplicativo funcional e atraente.'
+    description: 'Entre na era dos aplicativos móveis e leve seu negócio para o próximo nível, seja um aplicativo corporativo, uma solução de gerenciamento ou uma ideia revolucionária, estou aqui para transformá-la em um aplicativo funcional e atraente.'
   },
   {
     icon: Storefront,
     title: 'E-commerce',
-    description: 'Abra as portas do seu negócio para o mundo digital com uma Loja Virtual sob medida. Vou criar uma plataforma de compras online envolvente, segura e de fácil navegação, que vai encantar seus clientes e impulsionar suas vendas. De pagamentos seguros a catálogos de produtos atraentes, sua loja virtual será o ponto de partida para o sucesso do seu empreendimento.'
+    description: 'Abra as portas do seu negócio para o mundo digital com uma Loja Virtual sob medida. De pagamentos seguros a catálogos de produtos atraentes, sua loja virtual será o ponto de partida para o sucesso do seu empreendimento.'
   },
   {
     icon: Handshake,
     title: 'Landing Pages & Marketing',
-    description: 'Criação de landing pages otimizadas para campanhas de marketing. Desenvolvimento de páginas focadas na conversão de visitantes em leads ou clientes, integrando SEO, design responsivo e chamadas para ação eficazes, garantindo uma experiência de usuário envolvente e resultados mensuráveis.'
+    description: 'Criação de landing pages otimizadas, desenvolvimento de páginas focadas na conversão de visitantes em leads ou clientes, integrando SEO, garantindo uma experiência de usuário envolvente e resultados mensuráveis.'
   },
   {
     icon: Graph,
     title: 'Mentoria especializada',
-    description: 'Ofereça mentoria especializada para serviços na web, guiando desde o desenvolvimento front-end até a otimização de SEO. Compartilhe práticas recomendadas, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações e sites. Transforme habilidades básicas em expertise'
+    description: 'Ofereça mentoria especializada para serviços na web, guiando desde o desenvolvimento até a otimização de SEO. Compartilhe práticas recomendadas, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações. Transforme habilidades básicas em expertise'
   }
 
 
@@ -44,13 +44,10 @@ export default function MyServices() {
         <h1 className='fw-bold display-3'><span className='text-white h2 fw-bold'>Alguns dos meus </span><span className='text-red'> serviços</span></h1>
         <h3 className='text-secondary'>O que posso fazer por você?</h3>
         <p className='text-white'>
-          Combinamos ferramentas e plataformas líderes da indústria para desenvolver sites,
+          Utilizando ferramentas e plataformas líderes da indústria para desenvolver websites,
           aplicativos e sistemas que não só atendem, mas superam as expectativas.
           <br />
-          Nossa equipe é especializada em um amplo espectro de tecnologias,
-          garantindo que possamos oferecer soluções personalizadas e de alta qualidade,
-          adaptadas às necessidades específicas de cada cliente. Com uma abordagem centrada no cliente e uma paixão por excelência,
-          estamos aqui para transformar suas ideias em realidade com tecnologia de ponta.
+         Oferecendo soluções personalizadas e de alta qualidade, adaptadas às necessidades específicas de cada cliente. Com uma abordagem centrada no cliente e uma paixão por excelência, transformamos suas ideias em realidade com tecnologia de ponta.
         </p>
         <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
           {services.map((service, index) => (
