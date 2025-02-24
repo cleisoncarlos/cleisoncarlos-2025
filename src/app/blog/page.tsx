@@ -12,6 +12,7 @@ interface Post {
   _embedded: any;
   id: number;
   title: { rendered: string };
+  slug: string;
   featured_media: { source_url: string };
   categories: number[];
 }
@@ -27,8 +28,10 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     setLoading(true);
     fetch(`https://aprovinciadopara.com.br/wp-json/wp/v2/posts?_embed&page=${currentPage}&per_page=9`)
       .then((response) => {
@@ -55,6 +58,7 @@ export default function Blog() {
       .catch((error) => console.error("Erro ao buscar categorias:", error));
   }, []);
 
+  if (!isClient) return null;
   if (loading) return <Loading />;
 
   const handleNextPage = (event: any) => {
@@ -85,7 +89,7 @@ export default function Blog() {
             return (
               <div className="col-md-4" key={post.id}>
                 <CardNews
-                  url={`/blog/${post.id}`}
+                  url={`/blog/${post.slug}`}
                   category={category}
                   title={post.title.rendered}
                   urlImage={imageUrl}

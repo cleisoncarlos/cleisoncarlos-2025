@@ -1,4 +1,3 @@
-
 import styles from './style.module.scss'
 
 export default function CardNews({urlImage, title, category, url}:{urlImage: string, title: string, category: string, url: string} ) {
