@@ -2,6 +2,11 @@
     background: url("/hand.png");
     background-position: bottom;
     background-position: right;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
+}
+
+@media (max-width: 900px) {
+    .bg-hero {
+        background: none; 
+    }
 }
