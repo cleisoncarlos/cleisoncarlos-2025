@@ -6,18 +6,25 @@ interface Post {
     _embedded: any;
     id: number;
     title: { rendered: string };
+    slug: string;
     featured_media: { source_url: string };
-    categories: number[]; // Pode ser um ID de categoria
-}
+    categories: number[];
+  }
+
+  interface Category {
+    id: number;
+    name: string;
+  }
 
 export default function News() {
     const [posts, setPosts] = useState<Post[]>([]);
+    const [categories, setCategories] = useState<{ [key: number]: string }>({});
     const [loading, setLoading] = useState(true);
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
-        fetch("https://aprovinciadopara.com.br/wp-json/wp/v2/posts?_embed&per_page=6") // Ajuste a URL da API
+        fetch(`https://blog.cleisoncarlos.com/wp-json/wp/v2/posts?_embed&per_page=6`) // Ajuste a URL da API
             .then((response) => response.json())
             .then((data) => {
                 setPosts(data);
@@ -25,6 +32,20 @@ export default function News() {
             })
             .catch((error) => console.error("Erro ao buscar posts:", error));
     }, []);
+
+
+     useEffect(() => {
+        fetch(`https://blog.cleisoncarlos.com/wp-json/wp/v2/categories`)
+          .then((response) => response.json())
+          .then((data: Category[]) => {
+            const categoryMap: { [key: number]: string } = {};
+            data.forEach((category) => {
+              categoryMap[category.id] = category.name;
+            });
+            setCategories(categoryMap);
+          })
+          .catch((error) => console.error("Erro ao buscar categorias:", error));
+      }, []);
 
     if (!isClient) return null;
     if (loading) return <Loading />;
@@ -36,13 +57,14 @@ export default function News() {
             <div className="row">
                 {posts.map((post) => {
                     const imageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://picsum.photos/800/600";
+                    const category = categories[post.categories[0]] || "Tecnologia";
                     return (
                         <div className="col-md-4" key={post.id}>
                             <CardNews
-                                url={`/post/${post.id}`}
-                                category="Notícia" // Se quiser buscar a categoria, precisará fazer outra requisição
-                                title={post.title.rendered}
-                                urlImage={imageUrl}
+                                   url={`/blog/${post.slug}`}
+                                   category={category}
+                                   title={post.title.rendered}
+                                   urlImage={imageUrl}
                             />
                         </div>
                     );

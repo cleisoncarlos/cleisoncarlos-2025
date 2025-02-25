@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import CardNews from "../components/CardNews";
@@ -21,6 +21,9 @@ interface Category {
   name: string;
 }
 
+
+const meuBlog = 'process.env.URL_BLOG'
+
 export default function Blog() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [categories, setCategories] = useState<{ [key: number]: string }>({});
@@ -32,7 +35,7 @@ export default function Blog() {
   useEffect(() => {
     setIsClient(true);
     setLoading(true);
-    fetch(`https://aprovinciadopara.com.br/wp-json/wp/v2/posts?_embed&page=${currentPage}&per_page=9`)
+    fetch(`https://blog.cleisoncarlos.com/wp-json/wp/v2/posts?_embed&page=${currentPage}&per_page=9`)
       .then((response) => {
         setTotalPages(parseInt(response.headers.get('X-WP-TotalPages') || '1', 10));
         return response.json();
@@ -45,7 +48,7 @@ export default function Blog() {
   }, [currentPage]);
 
   useEffect(() => {
-    fetch(`https://aprovinciadopara.com.br/wp-json/wp/v2/categories`)
+    fetch(`https://blog.cleisoncarlos.com/wp-json/wp/v2/categories`)
       .then((response) => response.json())
       .then((data: Category[]) => {
         const categoryMap: { [key: number]: string } = {};

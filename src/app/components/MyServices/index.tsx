@@ -6,32 +6,32 @@ const services = [
   {
     icon: Code,
     title: 'Portais, websites e blogs',
-    description: 'A presença online é essencial nos dias de hojem um site ou blog personalizado que se destaque da concorrência. Transmita sua mensagem de forma cativante, compartilhe seus conhecimentos ou promova seus serviços de maneira profissional na internet.'
+    description: 'A presença online é essencial nos dias de hoje, um site ou blog personalizado que se destaque da concorrência. Transmita sua mensagem de forma cativante, compartilhe seus conhecimentos ou promova seus serviços de maneira profissional na internet.'
   },
   {
     icon: Robot,
     title: 'Inteligência Artificial I.A.',
-    description: 'Potencialize seu negócio com soluções de Inteligência Artificial personalizadas, automatize processos, melhore a tomada de decisões e crie experiências mais inteligentes para seus usuários, aproveite todo o potencial da AI para se manter à frente da concorrência.'
+    description: 'Potencialize seu negócio com soluções de Inteligência Artificial, automatize processos, melhore a tomada de decisões e crie experiências inteligentes para seus usuários, aproveite todo o potencial da AI para se manter à frente da concorrência.'
   },
   {
     icon: AppleLogo,
     title: 'Aplicativos ',
-    description: 'Entre na era dos aplicativos móveis e leve seu negócio para o próximo nível, seja um aplicativo corporativo, uma solução de gerenciamento ou uma ideia revolucionária, estou aqui para transformá-la em um aplicativo funcional e atraente.'
+    description: 'Entre na era dos aplicativos e leve seu negócio para o próximo nível, seja um app corporativo, uma solução de gerenciamento ou uma ideia revolucionária, estou aqui para transformá-la em um aplicativo funcional e atraente.'
   },
   {
     icon: Storefront,
     title: 'E-commerce',
-    description: 'Abra as portas do seu negócio para o mundo digital com uma Loja Virtual sob medida. De pagamentos seguros a catálogos de produtos atraentes, sua loja virtual será o ponto de partida para o sucesso do seu empreendimento.'
+    description: 'Abra as portas do seu negócio para o mundo digital com uma Loja Virtual sob medida, pagamentos seguros a catálogos de produtos atraentes, sua loja virtual será o ponto de partida para o sucesso do seu empreendimento.'
   },
   {
     icon: Handshake,
     title: 'Landing Pages & Marketing',
-    description: 'Criação de landing pages otimizadas, desenvolvimento de páginas focadas na conversão de visitantes em leads ou clientes, integrando SEO, garantindo uma experiência de usuário envolvente e resultados mensuráveis.'
+    description: 'Landing pages otimizadas, desenvolvimento de páginas focadas na conversão de visitantes em leads, integrando SEO, garantindo uma experiência de usuário envolvente e resultados mensuráveis.'
   },
   {
     icon: Graph,
     title: 'Mentoria especializada',
-    description: 'Ofereça mentoria especializada para serviços na web, guiando desde o desenvolvimento até a otimização de SEO. Compartilhe práticas recomendadas, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações. Transforme habilidades básicas em expertise'
+    description: 'Mentoria especializada para serviços na web, resolva desafios técnicos e ajude seus mentorados a alcançar a excelência em suas aplicações. Transforme habilidades básicas em expertise'
   }
 
 

@@ -20,7 +20,7 @@ export default function PostPage() {
 
     useEffect(() => {
         if (slug) {
-            fetch(`https://aprovinciadopara.com.br/wp-json/wp/v2/posts?slug=${slug}&_embed`)
+            fetch(`https://blog.cleisoncarlos.com/wp-json/wp/v2/posts?slug=${slug}&_embed`)
                 .then((response) => response.json())
                 .then((data) => {
                     setPost(data[0]);
@@ -41,9 +41,11 @@ export default function PostPage() {
             <div className="container py-5">
           <div className="col-lg-8 mx-auto">
           <h1 className="fw-bold mb-4">{post.title.rendered}</h1>
-              <Share url={`https://aprovinciadopara.com.br/${slug}`}/>
+              <Share url={`https://blog.cleisoncarlos.com/${slug}`}/>
             
+                <div className='d-flex justify-content-center'>
                 <img src={imageUrl} className="img-fluid mb-4" alt={post.title.rendered} />
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
           </div>
             </div>

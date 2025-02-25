@@ -28,7 +28,7 @@ export default function Header() {
         </li>
       </ul>
       <span className="navbar-text">
-        <a href='/' className='btn btn-danger btn-sm'>ENTRE EM CONTATO</a> 
+        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm'>ENTRE EM CONTATO</a> 
       </span>
     </div>
   </div>
