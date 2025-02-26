@@ -12,15 +12,14 @@ export default function Home() {
 
   return (
     <>
-      <div >
-        <Header />
+   
         <Hero />
         <MarqueeIcons />
-      </div>
+    
       <MyServices />
       <Projects />
       <News />
-      <Footer />
+ 
     </>
 
   );

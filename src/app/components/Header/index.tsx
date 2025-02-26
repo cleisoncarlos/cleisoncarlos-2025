@@ -1,4 +1,4 @@
-import {WhatsappLogo, EnvelopeSimple} from '@phosphor-icons/react'
+import {WhatsappLogo, EnvelopeSimple} from '@phosphor-icons/react/dist/ssr'
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Sobre</a>
+          <a className="nav-link" href="/about">Sobre</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/blog ">Blog</a>
@@ -35,10 +35,10 @@ export default function Header() {
 
         <div className="btn-group btn-sm" role="group" aria-label="Basic example">
         <button className="btn btn-outline-ligth btn-sm border-0 px-3" disabled={true}>ENTRE EM CONTATO</button> 
-        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm'>
+        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm border-0'>
         <EnvelopeSimple size={32} color='#fff' weight='duotone' />  
         </a> 
-        <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='btn btn-success btn-sm'>
+        <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='btn btn-success btn-sm border-0'>
         <WhatsappLogo size={32} color='#fff' weight='duotone' /> 
         </a> 
 

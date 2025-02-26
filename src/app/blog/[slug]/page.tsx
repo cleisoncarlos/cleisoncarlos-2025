@@ -36,8 +36,7 @@ export default function PostPage() {
     const imageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "https://picsum.photos/800/600";
 
     return (
-        <>
-            <Header />
+        <>      
             <div className="container py-5">
           <div className="col-lg-8 mx-auto">
           <h1 className="fw-bold mb-4">{post.title.rendered}</h1>
@@ -48,8 +47,7 @@ export default function PostPage() {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
           </div>
-            </div>
-            <Footer />
+            </div>         
         </>
     );
 }

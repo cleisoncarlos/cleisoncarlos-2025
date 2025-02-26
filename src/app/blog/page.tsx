@@ -79,9 +79,7 @@ export default function Blog() {
 
   return (
     <>
-      <div>
-        <Header />
-        </div>
+     
       <div className="container py-5">
 
       <h1 className='fw-bold display-3'><span className="small text-white h3">Meu</span> <span className='text-red'>Blog</span></h1>
@@ -119,7 +117,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <Footer />
+    
     </>
   );
 }
