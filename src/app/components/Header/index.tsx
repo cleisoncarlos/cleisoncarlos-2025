@@ -1,4 +1,4 @@
-import React from 'react'
+import {WhatsappLogo, EnvelopeSimple} from '@phosphor-icons/react'
 
 export default function Header() {
   return (
@@ -28,7 +28,31 @@ export default function Header() {
         </li>
       </ul>
       <span className="navbar-text">
-        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm'>ENTRE EM CONTATO</a> 
+    
+    
+    
+
+
+        <div className="btn-group btn-sm" role="group" aria-label="Basic example">
+        <button className="btn btn-outline-ligth btn-sm border-0 px-3" disabled={true}>ENTRE EM CONTATO</button> 
+        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm'>
+        <EnvelopeSimple size={32} color='#fff' weight='duotone' />  
+        </a> 
+        <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='btn btn-success btn-sm'>
+        <WhatsappLogo size={32} color='#fff' weight='duotone' /> 
+        </a> 
+
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
       </span>
     </div>
   </div>
