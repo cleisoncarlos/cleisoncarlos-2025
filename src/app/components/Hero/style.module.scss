@@ -1,12 +1,43 @@
-.bg-hero {
-    background: url("/hand.png");
-    background-position: bottom;
-    background-position: right;
-    background-repeat: no-repeat;    
-}
+ .bg-hero {
+     background: url("/hand.png");
+   // opacity: 0.5;
+     background-position: bottom;
+     background-position: right;
+     background-repeat: no-repeat;    
+ }
+
+
+
+// .bg-hero {
+//     position: relative; /* Garante que o conteúdo fique no lugar certo */
+//     color: #fff; /* Cor do texto para garantir contraste */
+// }
+
+// .bg-hero::before {
+//     content: "";
+//     background: url("/hand.png") no-repeat bottom right;
+//     opacity: 0.7; /* Define a opacidade da imagem */
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     z-index: -1; /* Coloca a imagem atrás do conteúdo */
+// }
+
+
 
 @media (max-width: 900px) {
     .bg-hero {
         background: none; 
     }
+}
+
+
+.glass {   
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    top: auto;
 }

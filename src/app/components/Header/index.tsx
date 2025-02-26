@@ -18,7 +18,7 @@ export default function Header() {
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="/">Inicial</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/about">Sobre</a>
@@ -35,11 +35,11 @@ export default function Header() {
 
         <div className="btn-group btn-sm" role="group" aria-label="Basic example">
         <button className="btn btn-outline-ligth btn-sm border-0 px-3" disabled={true}>ENTRE EM CONTATO</button> 
-        <a href='mailto:contato@cleisoncarlos.com' className='btn btn-danger btn-sm border-0'>
-        <EnvelopeSimple size={32} color='#fff' weight='duotone' />  
+        <a href='mailto:contato@cleisoncarlos.com' className='px-2'>
+        <EnvelopeSimple size={32} color='#d97272' weight='duotone' />  
         </a> 
-        <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='btn btn-success btn-sm border-0'>
-        <WhatsappLogo size={32} color='#fff' weight='duotone' /> 
+        <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='px-2'>
+        <WhatsappLogo size={32} color='#0ed929' weight='duotone' /> 
         </a> 
 
 </div>

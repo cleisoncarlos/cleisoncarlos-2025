@@ -4,7 +4,7 @@ export default function Share({url}: {url: string}) {
   return (
 <>
   <ul className="nav d-flex justify-content-end align-items-center mb-3">
-  <li className='nav-item'>
+  <li className='nav-item text-white'>
   Compartilhar:
   </li>
   <li className='nav-item'>

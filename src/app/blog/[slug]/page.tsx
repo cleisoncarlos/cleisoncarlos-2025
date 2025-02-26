@@ -39,7 +39,7 @@ export default function PostPage() {
         <>      
             <div className="container py-5">
           <div className="col-lg-8 mx-auto">
-          <h1 className="fw-bold mb-4">{post.title.rendered}</h1>
+          <h1 className="fw-bold mb-4 text-white">{post.title.rendered}</h1>
               <Share url={`https://blog.cleisoncarlos.com/${slug}`}/>
             
                 <div className='d-flex justify-content-center'>

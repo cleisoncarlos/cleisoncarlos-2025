@@ -1,16 +1,9 @@
 'use client'
 import Link from 'next/link';
-import Header from '../components/Header';
-
-
-import { LinkBreak } from '@phosphor-icons/react'
 
 export default function NotFound() {
-  return (
-    <>
-      <Header />
-      <div className="d-flex flex-column py-5 text-white bg-black ">
-
+  return (  
+      <div className="d-flex flex-column py-5 text-white bg-black">
         <div className='mx-auto text-center'>
           <h1 className="display-1 text-secondary">Error 404</h1>
           <img src='/404.png' className='img-fluid' width={600} />
@@ -19,9 +12,6 @@ export default function NotFound() {
             Voltar para a página inicial
           </Link>
         </div>
-
       </div>
-
-    </>
   );
 }
