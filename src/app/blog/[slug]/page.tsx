@@ -45,7 +45,7 @@ export default function PostPage() {
                 <div className='d-flex justify-content-center'>
                 <img src={imageUrl} className="img-fluid mb-4" alt={post.title.rendered} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                <div className='text-white' dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
           </div>
             </div>         
         </>
