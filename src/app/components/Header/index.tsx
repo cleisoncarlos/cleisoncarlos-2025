@@ -10,7 +10,7 @@ export default function Header() {
    
     <span className='fw-bold text-red'>cleisoncarlos</span><span className='small text-white'>.com</span> </span>
      */}
-     <img src='/logo.svg' className='img-fluid'/>  
+     <img src='/logo.svg' className='img-fluid' alt='Logo Cleison Carlos'/>  
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
