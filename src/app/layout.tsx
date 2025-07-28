@@ -3,8 +3,8 @@ import { Poppins } from "next/font/google";
 import "./global.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-
-
+import Chatbot from "./components/Chatbot";
+// Importando a fonte Poppins do Google Fonts
 const poppins = Poppins({
   weight: ['400', '600'],
   subsets: ['latin'],
@@ -15,33 +15,33 @@ const poppins = Poppins({
 
  export const metadata: Metadata = {  
   title: "Desenvolvedor Web | Criação de Sites e Aplicações Modernas",  
-  description: "Sou um desenvolvedor web especializado em Next.js, React e Node.js. Construo sites rápidos, responsivos e otimizados para SEO. Vamos transformar sua ideia em realidade!",  
+  description: "Sou um desenvolvedor web apaixonado por criar experiências digitais que combinam desempenho, estética e funcionalidade. Com expertise em front-end e back-end, transformo ideias em interfaces intuitivas e sistemas robustos que impulsionam negócios e encantam usuários.",  
   keywords: "Desenvolvedor Web, Criação de Sites, Next.js, React, Frontend, Backend, Programador Freelancer, SEO, Otimização de Sites",  
-  authors: [{name: "Seu Nome", url: "https://seusite.com"}], 
+  authors: [{name: "Cleison Carlos", url: "https://cleisoncarlos.com.com"}], 
   robots: "index, follow",  
-  // canonical: "https://seusite.com",  
+  // canonical: "https://cleisoncarlos.com",  
   openGraph: {  
     title: "Desenvolvedor Web | Criação de Sites e Aplicações Modernas",  
-    description: "Sou especialista em desenvolvimento web com Next.js e React. Crio soluções personalizadas para empresas e freelancers. Saiba mais!",  
-    url: "https://seusite.com",  
-    siteName: "Seu Nome - Desenvolvedor Web",  
+    description: "Sou um desenvolvedor web apaixonado por criar experiências digitais que combinam desempenho, estética e funcionalidade. Com expertise em front-end e back-end, transformo ideias em interfaces intuitivas e sistemas robustos que impulsionam negócios e encantam usuários.",  
+    url: "https://cleisoncrlos.com",  
+    siteName: "Cleison Carlos - Desenvolvedor Web / Mobile",  
     type: "website",  
     images: [  
       {  
-        url: "https://seusite.com/og-image.jpg",  
+        url: "https://cleisoncarlos.com.com/og-image.jpg",  
         width: 1200,  
         height: 630,  
-        alt: "Desenvolvedor Web Freelancer",  
+        alt: "Desenvolvedor Web / Mobile - Cleison Carlos",  
       },  
     ],  
   },  
-  twitter: {  
-    card: "summary_large_image",  
-    site: "@seuTwitter",  
-    title: "Desenvolvedor Web | Criação de Sites e Aplicações Modernas",  
-    description: "Especialista em desenvolvimento web com Next.js e React. Construo sites rápidos e otimizados para SEO.",  
-    images: ["https://seusite.com/og-image.jpg"],  
-  },  
+  // twitter: {  
+  //   card: "summary_large_image",  
+  //   site: "@seuTwitter",  
+  //   title: "Desenvolvedor Web | Criação de Sites e Aplicações Modernas",  
+  //   description: "Especialista em desenvolvimento web com Next.js e React. Construo sites rápidos e otimizados para SEO.",  
+  //   images: ["https://cleisoncarlos.com/og-image.jpg"],  
+  // },  
 };  
 
 
@@ -58,6 +58,7 @@ export default function RootLayout({
        {children}
        </main>
        <Footer/>
+       <Chatbot />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>

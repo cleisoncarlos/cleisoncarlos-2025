@@ -16,8 +16,8 @@ export default function Header() {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarText">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
+       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        {/* <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="/">Inicial</a>
         </li>
         <li className="nav-item">
@@ -25,8 +25,8 @@ export default function Header() {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/blog ">Blog</a>
-        </li>
-      </ul>
+        </li> */}
+      </ul> 
       <span className="navbar-text">
     
     
@@ -36,13 +36,12 @@ export default function Header() {
         <div className="btn-group btn-sm" role="group" aria-label="Basic example">
         <button className="btn btn-outline-ligth btn-sm border-0 px-3" disabled={true}>ENTRE EM CONTATO</button> 
         <a href='mailto:contato@cleisoncarlos.com' className='px-2'>
-        <EnvelopeSimple size={32} color='#d97272' weight='duotone' />  
+        <EnvelopeSimple size={32} color='#e86868' weight='duotone' />  
         </a> 
         <a href='https://wa.me/91981989210?text=Olá, entro em contato através do seu site' className='px-2'>
-        <WhatsappLogo size={32} color='#0ed929' weight='duotone' /> 
+        <WhatsappLogo size={32} color='#0abd22' weight='duotone' /> 
         </a> 
-
-</div>
+      </div>
     
     
     

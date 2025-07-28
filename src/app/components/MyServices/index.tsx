@@ -41,8 +41,8 @@ export default function MyServices() {
   return (
     <section id='bg-code'>
       <div className="container py-5">
-        <h1 className='fw-bold display-3'><span className='text-white h2 fw-bold'>Alguns dos meus </span><span className='text-red'> serviços</span></h1>
-        <h3 className='text-secondary'>O que posso fazer por você?</h3>
+        <h3 className='fw-bold display-3 h1'><span className='text-white h2 fw-bold'>Alguns dos meus </span><span className='text-red'> serviços</span></h3>
+        <p className='text-secondary h3'>O que posso fazer por você?</p>
         <p className='text-white'>
           Utilizando ferramentas e plataformas líderes da indústria para desenvolver websites,
           aplicativos e sistemas que não só atendem, mas superam as expectativas.
