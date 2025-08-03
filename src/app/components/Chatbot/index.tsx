@@ -19,7 +19,7 @@
 // export default Chatbot
 
 // app/components/TypebotBubble.tsx
-"use client";
+
 
 import { useEffect } from "react";
 
