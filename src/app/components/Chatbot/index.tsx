@@ -6,11 +6,11 @@ import { Bubble } from '@typebot.io/react'
 const Chatbot = () => {
   return (
     <Bubble
-      typebot="br-cleisoncarlos-com"
+      typebot="https://chatbot.cleisoncarlos.com/br-cleisoncarlos-com"
       previewMessage={{
         message: "Como posso te ajudar?",
         autoShowDelay: 2000,
-        avatarUrl: 'https://avatars.githubusercontent.com/u/16015833?v=4',
+        avatarUrl: 'https://static.vecteezy.com/system/resources/previews/034/211/480/non_2x/ai-chatbots-icon-illustration-vector.jpg',
 
       }}
       theme={{
