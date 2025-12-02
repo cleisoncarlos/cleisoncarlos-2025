@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./global.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Chatbot from "./components/Chatbot";
 // Importando a fonte Poppins do Google Fonts
 const poppins = Poppins({
   weight: ['400', '600'],
@@ -58,7 +57,7 @@ export default function RootLayout({
        {children}
        </main>
        <Footer/>
-       <Chatbot />
+      
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>
